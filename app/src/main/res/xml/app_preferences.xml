@@ -1,0 +1,155 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+	
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Chủ Đề Ứng Dụng">
+
+
+        <android.support.v7.preference.ListPreference
+            android:key="modeNight"
+            android:defaultValue="off"
+            android:entries="@array/pref_modoNoturno_option_labels"
+            android:entryValues="@array/pref_modoNoturno_option_values"
+            android:title="Chủ Đề"
+        />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="Thông Báo Tốc Độ Mạng">
+
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="speed_meter"
+			android:title="Hiển Thị Tốc Độ Mạng"
+			android:summary="Display current network speed and data usage in the notification"
+			android:defaultValue="true"/>
+
+	</android.support.v7.preference.PreferenceCategory>
+
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="Nén Dữ Liệu">
+
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="data_compression"
+			android:title="Nén Dữ Liệu"
+			android:summary="Compresses and speed up data transfer for files/data that can be compressed. NOT recommended for low memory device."
+			android:defaultValue="true"/>
+
+	</android.support.v7.preference.PreferenceCategory>
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Khóa Đánh Thức CPU">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="wakelock"
+            android:summary="Activate only if the application is stopping working on its own, as happens when locking the screen on some devices."
+            android:title="Khóa CPU" />
+
+	</android.support.v7.preference.PreferenceCategory>
+ 
+        <android.support.v7.preference.PreferenceCategory
+        android:title="@string/category_forward_dns">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="dnsForward"
+            android:summary="@string/summary_forward_dns"
+            android:title="@string/title_forward_dns" />
+
+			<com.vienetworks.originvpn.view.SummaryEditTextPreference
+            android:key="dnsResolver"
+            android:title="@string/title_dns_primary"
+            android:summary="@string/summary_dns_primary"
+            android:dialogMessage="@string/dialog_message_dns_primary"
+            android:singleLine="true"
+            android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_forward_udp">
+
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="udpForward"
+			android:summary="@string/summary_forward_udp"
+			android:title="@string/title_forward_udp" />
+
+		<com.vienetworks.originvpn.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</android.support.v7.preference.PreferenceCategory>
+
+	<android.support.v7.preference.PreferenceCategory
+	    android:title="Tiện Ích Ping">
+		
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="auto_ping"
+			android:summary="Pinger with url for keep-alive connection, used for stabilizing and prevent your connection from sleep."
+			android:title="Tự Động Ping" />
+	
+		<com.vienetworks.originvpn.view.SummaryEditTextPreference
+            android:dependency="auto_ping"
+            android:key="ping_server"
+            android:title="Máy Chủ Ping"
+			android:summary="Đặt Máy Chủ Ping"
+			android:defaultValue="clients3.google.com"
+		    android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</android.support.v7.preference.PreferenceCategory>
+
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_settings_adicionais">
+		
+		<com.vienetworks.originvpn.view.SummaryEditTextPreference
+		android:key="pingerSSH"
+		android:title="@string/title_ping_time"
+		android:maxLength="3"
+		android:summary="@string/no_value"
+		android:singleLine="true"
+		android:dialogLayout="@layout/pref_dialog_number"
+		/>
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="autoClearLogs"
+			android:summary="@string/summary_auto_clear_log"
+			android:title="@string/title_auto_clear_log"
+		/>
+
+		<android.support.v7.preference.SwitchPreferenceCompat
+			android:key="hideLog"
+			android:summary="@string/summary_hide_log"
+			android:title="@string/title_hide_log"
+		/>
+
+	</android.support.v7.preference.PreferenceCategory>
+
+
+	<!--<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_user_interface">
+
+		<android.support.v7.preference.ListPreference
+        	android:key="idioma"
+			android:defaultValue="default"
+        	android:entries="@array/pref_idioma_option_labels"
+        	android:entryValues="@array/pref_idioma_option_values"
+        	android:title="@string/title_language"
+		/>
+
+	</android.support.v7.preference.PreferenceCategory>-->
+
+  <!--
+	<android.support.v7.preference.Preference
+    	android:key="screenAdvancedSettings"
+    app:fragment="com.vienetworks.originvpn.preference.SettingsAdvancedPreference"
+        android:title="@string/category_advanced_settings"
+	/> -->
+ 
+
+</android.support.v7.preference.PreferenceScreen>

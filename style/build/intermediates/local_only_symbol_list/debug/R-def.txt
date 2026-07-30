@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black_light
+color blue
+color blue_light
+color colorAccent
+color colorPrimary
+color colorPrimaryBackground
+color colorPrimaryDark
+color colorSecondary
+color colorSecondaryBackground
+color colorText
+color colorTextDisabled
+color colorTextEnabled
+color gray
+color gray_light
+color green
+color red
+color textColorPrimary
+color textColorSecondary
+color text_color
+color white
+color yellow

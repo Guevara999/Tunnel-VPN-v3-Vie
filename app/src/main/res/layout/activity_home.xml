@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.CardView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="0.0dip"
+			android:layout_marginBottom="10.0dip"
+			android:layout_marginRight="0.0dip"
+			ads:cardBackgroundColor="?android:windowBackground"
+			ads:cardCornerRadius="10.0dip"
+			ads:cardElevation="2.0dip">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="80dp">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="5dp">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Chọn Máy Chủ"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:textSize="13sp"
+							android:layout_gravity="center"/>
+
+						<Spinner
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:id="@+id/serverSpinner"
+							android:background="@drawable/box_gradient"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="1.0dip"/>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="left|center"
+					android:id="@+id/mlayout"
+					android:layout_marginLeft="25.0dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="20dp"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:typeface="sans"
+						android:id="@+id/bytes_out"
+						android:textSize="12sp"
+						android:gravity="center"
+						android:layout_gravity="center"/>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="12.0dp"
+						android:layout_height="12.0dp"
+						android:background="@drawable/ic_up"
+						android:layout_marginRight="30dp"
+						android:layout_gravity="center"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right|center"
+					android:layout_marginTop="-20dp"
+					android:id="@+id/mlayout2"
+					android:layout_marginRight="25.0dp">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="12.0dp"
+						android:layout_height="12.0dp"
+						android:background="@drawable/ic_down"
+						android:layout_marginLeft="30dp"
+						android:layout_gravity="center"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="20dp"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:typeface="sans"
+						android:id="@+id/bytes_in"
+						android:textSize="12sp"
+						android:gravity="center"
+						android:layout_gravity="center"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginTop="-24dp"
+					android:gravity="center"
+					android:layout_marginBottom="3dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Trạng thái:"
+						android:typeface="serif"
+						android:textStyle="bold"
+						android:layout_marginTop="2.0dp"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:textSize="12sp"
+						android:layout_marginRight="2.0dp"
+						android:gravity="center"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/status1"
+						android:textColor="#EA3E33"
+						android:text="Đã Ngắt Kết Nối!"
+						android:typeface="serif"
+						android:textStyle="bold"
+						android:layout_marginTop="2.0dp"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:textSize="12sp"
+						android:gravity="center"/>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="1.0dip"/>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="0.0dip"
+					android:layout_marginBottom="10.0dip"
+					android:layout_marginRight="0.0dip"
+					ads:cardBackgroundColor="?android:windowBackground"
+					ads:cardCornerRadius="10.0dip"
+					ads:cardElevation="2.0dip">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:id="@+id/activityhomeTextView1">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:id="@+id/config_version_info"
+							android:layout_marginRight="10dp"
+							android:textSize="12.0sp"
+							android:gravity="center"
+							android:padding="2dp"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:id="@+id/txtDate"
+							android:layout_marginRight="10dp"
+							android:textSize="12.0sp"
+							android:gravity="center"/>
+
+						<ScrollView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<RelativeLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:textAppearance="?android:attr/textAppearanceSmall"
+									android:layout_toRightOf="@id/activityhomeTextView1"
+									android:id="@+id/app_info"
+									android:textSize="12.0sp"
+									android:gravity="center"
+									android:padding="2dp"/>
+
+							</RelativeLayout>
+
+						</ScrollView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:gravity="center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Chọn Nhà Mạng"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:textSize="13sp"
+						android:layout_gravity="center"/>
+
+				</LinearLayout>
+
+				<Spinner
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:id="@+id/payloadSpinner"
+					android:layout_marginLeft="5.0dp"
+					android:layout_marginRight="5.0dp"
+					android:background="@drawable/box_gradient"/>
+
+				<Spinner
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:id="@+id/methodSpinner"
+					android:visibility="gone"/>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="0.0dip"
+					android:layout_marginRight="0.0dip">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5.0dp">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="12.0dp"
+							android:layout_marginLeft="10dp">
+
+							<Switch
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Chế Độ Tùy Chỉnh"
+								android:textSize="12sp"
+								android:id="@+id/customSetup"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Chọn Cổng"
+								android:textAppearance="?android:attr/textAppearanceSmall"
+								android:textSize="13sp"
+								android:layout_marginLeft="5.0dp"/>
+
+							<Spinner
+								android:layout_width="wrap_content"
+								android:layout_height="50dp"
+								android:id="@+id/portAuto"
+								android:layout_marginRight="5.0dp"/>
+
+							<Spinner
+								android:layout_width="match_parent"
+								android:layout_height="50dp"
+								android:id="@+id/portSpinner"
+								android:visibility="gone"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<LinearLayout
+					android:id="@+id/activity_mainInputPayloadLinearLayout"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:background="@drawable/box_gradient"
+					android:padding="10dp"
+					android:visibility="gone">
+
+					<android.support.design.widget.TextInputLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<android.support.design.widget.TextInputEditText
+							android:id="@+id/activity_mainInputPayloadEditText"
+							android:inputType="textMultiLine|textLongMessage"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:ems="20"
+							android:maxHeight="100dp"
+							android:hint="@string/payload"
+							android:textColor="@color/colorText"/>
+
+					</android.support.design.widget.TextInputLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/activity_ssl_layout"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:background="@drawable/box_gradient"
+					android:padding="10dp"
+					android:visibility="gone">
+
+					<android.support.design.widget.TextInputLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<android.support.design.widget.TextInputEditText
+							android:id="@+id/activity_sni_edit"
+							android:inputType="textMultiLine|textLongMessage"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:ems="20"
+							android:maxHeight="100dp"
+							android:hint="@string/sni"
+							android:textColor="@color/colorText"/>
+
+					</android.support.design.widget.TextInputLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center|top"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="35dp"
+					android:layout_marginTop="10.0dip">
+
+					<Button
+						android:foreground="?android:attr/selectableItemBackground"
+						android:clickable="true"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:id="@+id/activity_starterButtonMain"
+						android:background="@drawable/ic_ins1"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="START"
+						style="?android:attr/buttonStyleSmall"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/view_message"
+					android:padding="10.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginTop="5dp">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="left|center"
+							android:id="@+id/headerz"
+							android:foreground="?android:attr/selectableItemBackground"
+							android:clickable="true">
+
+							<ImageView
+								android:orientation="vertical"
+								android:layout_width="20dp"
+								android:layout_height="20dp"
+								android:layout_margin="5dp"
+								android:layout_marginLeft="20dp"
+								android:src="@drawable/ic_recount"/>
+
+							<TextView
+								android:shadowRadius="1.0"
+								android:shadowDy="1.0"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="♅ Tin Nhắn Của Quản Trị Viên!"
+								android:layout_marginLeft="10dp"
+								android:textStyle="bold"
+								android:typeface="monospace"
+								android:textSize="12sp"/>
+
+							<RelativeLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content">
+
+								<ImageView
+									android:tint="#000000"
+									android:id="@+id/mArrowDown"
+									android:background="@null"
+									android:layout_width="20dp"
+									android:layout_height="20dp"
+									android:src="@drawable/arrow_down"
+									android:layout_alignParentRight="true"
+									android:layout_marginRight="10dp"/>
+
+							</RelativeLayout>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:id="@+id/expandable"
+							android:layout_margin="10dp"
+							android:background="@drawable/box_gradient">
+
+							<TextView
+								android:orientation="vertical"
+								android:autoLink="web"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Đang Kiểm Tra Tin Nhắn..."
+								android:id="@+id/admin_msg"
+								android:layout_margin="3dp"
+								android:layout_marginLeft="5dp"
+								android:textIsSelectable="true"
+								android:textColorLink="?colorPrimary"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</android.support.v7.widget.CardView>
+
+	</ScrollView>
+
+</LinearLayout>
+

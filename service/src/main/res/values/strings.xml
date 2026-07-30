@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tunnel VPN</string>
+  
+	<string name="attention">Chú ý</string>
+    <string name="cancel">Hủy bỏ</string>
+	<string name="ok">Ok</string>
+	<string name="exit">Thoát</string>
+	<string name="error_request_permission">Bạn cần quyền truy cập vào Bộ nhớ ngoài</string>
+	
+	<string name="importing_settings">Nhập cấu hình</string>
+	<string name="log_settings_valid">Tệp hợp lệ cho đến: %1$s</string>
+	<string name="log_server_banner">Thông báo Máy chủ:</string>
+	<string name="log_conection_lost">Kết nối bị mất</string>
+	
+	
+	<string name="start">Kết Nối</string>
+	<string name="stop">Ngắt Kết Nối</string>
+	<string name="reconnect">Kết Nối Lại</string>
+	
+    <string name="stopping_service_ssh">Tunnel VPN đã dừng</string>
+    <string name="starting_service_ssh">Tunnel VPN đã bắt đầu</string>
+	
+	<string name="title_auth">Xác thực</string>
+	<string name="auth_message">Hoàn thành với chi tiết tài khoản SSH</string>
+	<string name="auth_username">tên tài khoản</string>
+	<string name="password">Mật khẩu</string>
+	<string name="show_password">Hiển thị mật khẩu</string>
+	<string name="save_password">Lưu mật khẩu</string>
+	
+	
+	<string name="channel_name_background">Thống kê kết nối</string>
+    <string name="channel_description_background">Thống kê liên tục về kết nối VPN đã thiết lập</string>
+    <string name="channel_name_status">Thay đổi trạng thái kết nối</string>
+    <string name="channel_description_status">Thay đổi trạng thái của kết nối SocksHttp (Đang kết nối, xác thực,…)</string>
+	<string name="channel_name_userreq">Cần có sự tương tác của người dùng</string>
+    <string name="channel_description_userreq">Kết nối VPN ĐẠI TUNNEL yêu cầu đầu vào của người dùng, ví dụ: xác thực hai yếu tố</string>
+	
+	<string name="state_starting">Bắt Đầu</string>
+	<string name="state_connecting">Đang Kết Nối</string>
+    <string name="state_wait">Đang chờ phản hồi của máy chủ</string>
+    <string name="state_auth">Xác thực</string>
+	<string name="state_auth_success">Xác Thực Thành Công</string>
+    <string name="state_get_config">Nhận cấu hình máy khách</string>
+    <string name="state_assign_ip">Chỉ định địa chỉ IP</string>
+    <string name="state_add_routes">Thêm tuyến đường</string>
+    <string name="state_connected">Dịch vụ VPN đang chạy</string>
+    <string name="state_disconnected">Đã Ngắt Kết Nối</string>
+    <string name="state_reconnecting">Đang Kết Nối Lại</string>
+    <string name="state_stopping">Đang Dừng Lại</string>
+    <string name="state_noprocess">Không Họat Động</string>
+    <string name="state_resolve">Đang phân giải tên máy chủ</string>
+    <string name="state_tcp_connect">Conectando (TCP)</string>
+    <string name="state_auth_failed">Quá trình xác thực đã thất bại</string>
+    <string name="state_nonetwork">Chờ Kết Nối Mạng</string>
+    <string name="state_waitconnectretry">Chờ %ss giây giữa lần thử kết nối</string>
+    <string name="state_auth_pending">Đang đợi Tự động hóa</string>
+    <string name="state_user_vpn_password" translatable="false">Đang đợi mật khẩu VPN của người dùng</string>
+	<string name="state_user_vpn_permission" translatable="false">Đang đợi người dùng cho phép sử dụng API VPN</string>
+	<string name="state_user_vpn_password_cancelled" translatable="false">Hộp thoại nhập mật khẩu VPN đã bị hủy</string>
+    <string name="state_user_vpn_permission_cancelled" translatable="false">Hộp thoại quyền API VPN đã bị hủy</string>
+    <string name="unknown_state">Trạng thái không xác định</string>
+	<string name="nought_alwayson_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
+	<string name="no_vpn_support_image">Hình ảnh của bạn không hỗ trợ API VPNService, xin lỗi :(</string>
+    <string name="state_proxy_running">Đang Chạy Proxy</string>
+	<string name="state_proxy_inject">Đang Tiêm</string>
+	
+	<string name="mobile_info">Hoạt Động Trên: %3$s, Android %5$s, API %4$d</string>
+	<string name="app_mobile_info">Phiên Bản Ứng Dụng: %1$s %2$s</string>
+	
+	<string name="alert_update_app">Cài đặt phiên bản mới nhất</string>
+	<string name="error_settings_expired">Tệp đã hết hạn</string>
+	<string name="error_file_settings_invalid">Cấu hình không hợp lệ</string>
+	<string name="error_file_invalid">Tập tin không hợp lệ</string>
+	<string name="error_internet_off">Vui lòng kết nối Internet</string>
+	<string name="error_empty_payload">Tải trọng không được để trống</string>
+	<string name="error_empty_settings">Định cấu hình chính xác để bắt đầu</string>
+	<string name="error_proxy_invalid">Proxy không hợp lệ</string>
+	<string name="error_server_ip_invalid">Máy chủ / IP không hợp lệ</string>
+	<string name="error_root_detected">Cấu hình bị khóa cho các thiết bị có quyền truy cập root</string>
+	<string name="error_vpn_sniffer_detected">Một ứng dụng VPN đang chạy khác đã được phát hiện, hãy dừng ứng dụng đó trước</string>
+	<string name="error_save_settings">Không thể lưu cấu hình</string>
+	
+</resources>

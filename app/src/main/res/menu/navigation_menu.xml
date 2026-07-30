@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group android:id="@+id/grupo0">
+
+
+		<item
+       		android:id="@+id/mipaygen"
+			android:icon="@drawable/ic_code"
+        	android:title="Tạo Payload"/>
+
+	    <item
+       		android:id="@+id/miupdate"
+			android:icon="@drawable/ic_cloud_download"
+        	android:title="Kiểm Tra Cập Nhật"/>
+		
+		<item
+			android:id="@+id/import_config"
+			android:icon="@drawable/load"
+			android:title="Cập Nhật Qua File"/>
+	</group>
+
+	<group android:id="@+id/grupo1">
+
+    	<item
+       		android:id="@+id/miPhoneConfg"
+			android:icon="@drawable/ic_wifi_tethering_black_24dp"
+        	android:title="@string/network_mobile"/>
+
+    	<item android:id="@+id/miSettings"
+        	android:icon="@drawable/ic_settings"
+        	android:title="@string/settings"/>
+
+		<item android:id="@+id/taiphatwifi"
+        	android:icon="@drawable/ic_taiphatwifi"
+        	android:title="Tải Phát Wifi"/>
+
+		<item android:id="@+id/phatwifi"
+        	android:icon="@drawable/ic_phatwifi"
+        	android:title="Mở Phát Wifi"/>
+
+		<item android:id="@+id/dotocdomang"
+        	android:icon="@drawable/ic_speedtest"
+        	android:title="Kiểm Tra Tốc Độ Mạng"/>
+	
+	</group>
+
+	<group android:id="@+id/grupo3">
+
+		<item android:id="@+id/ungho"
+            android:icon="@drawable/ic_donate"
+			android:title="Ủng Hộ"/>
+
+
+
+    </group>
+
+	<group android:id="@+id/grupo3">
+
+
+		<item
+			android:id="@+id/closed_app"
+			android:icon="@drawable/ic_exit_to_app"
+			android:title="Thoát"/>
+
+
+	</group>
+
+
+</menu>

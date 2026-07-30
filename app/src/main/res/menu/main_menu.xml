@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<item
+        android:id="@+id/miSettings"
+        android:icon="@drawable/ic_settings"
+		app:showAsAction="always"
+        android:title="@string/settings">
+ 
+   </item>
+ 
+    <item
+        android:id="@+id/molq"
+        android:title="Mở Liên Quân"/>
+      
+    <item
+        android:id="@+id/moff"
+        android:title="Mở Free Fire"/>
+	
+	<item
+        android:id="@+id/mott"
+        android:title="Mở Tik Tok"/>
+    
+    <item
+        android:id="@+id/mophatwifi"
+        android:title="Mở Phát Wifi"/>
+	
+	<item
+        android:id="@+id/miExit"
+        android:title="Thoát"/>
+	
+	
+</menu>

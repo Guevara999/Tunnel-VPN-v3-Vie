@@ -1,0 +1,139 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.romzkie.ultrasshservice"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml
+10
+11    <!-- - Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:8:2-63
+13-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:8:19-61
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:9:2-75
+14-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:9:19-73
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:11:2-72
+15-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:11:19-70
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:13:2-77
+16-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:13:19-75
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:14:5-79
+17-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:14:22-77
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+18-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:15:2-74
+18-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:15:19-71
+19
+20    <!-- - Application -->
+21    <application>
+21-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:19:5-82:19
+22
+23        <!-- - Activities -->
+24        <activity
+24-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:23:3-34:20
+25            android:name="com.romzkie.ultrasshservice.LaunchVpn"
+25-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:23:13-38
+26            android:autoRemoveFromRecents="true"
+26-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:24:4-40
+27            android:excludeFromRecents="true"
+27-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:25:13-46
+28            android:label="@string/app_name"
+28-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:28:4-36
+29            android:taskAffinity=".LaunchVPN"
+29-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:26:13-46
+30            android:theme="@style/AppThemeLogin" >
+30-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:27:4-40
+31            <intent-filter>
+31-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:29:4-33:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:30:17-69
+32-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:30:25-66
+33
+34                <category android:name="android.intent.category.DEFAULT" />
+34-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:32:17-76
+34-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:32:27-73
+35            </intent-filter>
+36        </activity>
+37
+38        <!-- This is for ensuring the background service still runs when/if the app is swiped away -->
+39        <activity
+39-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:37:9-47:64
+40            android:name="com.romzkie.ultrasshservice.util.DummyActivity"
+40-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:38:13-47
+41            android:allowTaskReparenting="true"
+41-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:39:13-48
+42            android:alwaysRetainTaskState="false"
+42-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:40:13-50
+43            android:clearTaskOnLaunch="true"
+43-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:41:13-45
+44            android:enabled="true"
+44-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:42:13-35
+45            android:excludeFromRecents="true"
+45-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:43:13-46
+46            android:finishOnTaskLaunch="true"
+46-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:44:13-46
+47            android:noHistory="true"
+47-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:45:13-37
+48            android:stateNotNeeded="true"
+48-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:46:13-42
+49            android:theme="@android:style/Theme.Translucent" />
+49-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:47:13-61
+50
+51        <!-- - Receivers -->
+52        <receiver android:name="com.romzkie.ultrasshservice.MainReceiver" >
+52-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:51:3-61:14
+52-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:52:4-32
+53            <intent-filter>
+53-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:53:4-60:20
+54                <action android:name=".MainReceiver.ACTION_SERVICE_STOP" >
+54-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:54:5-56:14
+54-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:55:6-54
+55                </action>
+56                <action android:name=".MainReceiver.ACTION_SERVICE_RESTART" >
+56-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:57:5-59:14
+56-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:58:6-57
+57                </action>
+58            </intent-filter>
+59        </receiver>
+60
+61        <!-- - Services -->
+62        <service
+62-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:65:3-73:13
+63            android:name="com.romzkie.ultrasshservice.tunnel.vpn.TunnelVpnService"
+63-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:66:4-47
+64            android:enabled="true"
+64-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:68:4-26
+65            android:exported="false"
+65-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:67:4-28
+66            android:label="SocksHttp Vpn"
+66-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:65:12-41
+67            android:permission="android.permission.BIND_VPN_SERVICE" >
+67-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:69:4-60
+68            <intent-filter>
+68-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:70:4-72:20
+69                <action android:name="android.net.VpnService" />
+69-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:71:5-52
+69-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:71:13-50
+70            </intent-filter>
+71        </service>
+72        <service
+72-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:75:3-79:13
+73            android:name="com.romzkie.ultrasshservice.SocksHttpService"
+73-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:76:4-36
+74            android:exported="false"
+74-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:78:4-28
+75            android:label="SocksHttp Service"
+75-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:75:12-45
+76            android:stopWithTask="false" >
+76-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\service\src\main\AndroidManifest.xml:77:4-32
+77        </service>
+78    </application>
+79
+80</manifest>

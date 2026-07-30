@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="dialog_default_title">Đây là một tin nhắn!</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Hủy Bỏ</string>
+    <!-- Insure Tunnel Develope by Gilmer Ocba -->
+    <string name="app_name">Tunnel VPN</string>
+	
+	<string name="about">Thông Tin</string>
+	<string name="config">Cấu Hình</string>
+	<string name="settings">Cài Đặt</string>
+	<string name="settings_ssh">Cài Đặt SSH</string>
+	<string name="network_mobile">Thông Tin Sim</string>
+	<string name="method_connection">Phương thức kết nối</string>
+	<string name="rate_app">Để đánh giá</string>
+	<string name="feedback">Nhận xét</string>
+	<string name="first_start_msg">Ứng dụng này được phát triển cho người dùng nâng cao, hãy ghi nhớ điều này khi sử dụng nó.</string>
+	<string name="title_login_main">Thông tin thêm về đăng nhập</string>
+	<string name="connected">Đã Kết Nối</string>
+    <string name="servicestop">Dừng Bảo Mật</string>
+    <string name="authenticating">Xác Thực</string>
+    <string name="authfailed">Xác Thực Thất Bại</string>
+    <string name="disconnected">Đã Ngắt Kết Nối</string>
+    <string name="nonetwork">Không Có Mạng</string>
+    <string name="connecting">Đang Chờ Phản Hồi Của Máy Chủ!!</string>
+	<!-- Preference -->
+	<string name="category_forward_udp">Chuyển Tiếp UDP</string>
+	<string name="title_forward_udp">Chuyển Tiếp UDP</string>
+	<string name="summary_forward_udp">Chuyển Hướng Đã Được Kích Hoạt Cho Máy Chủ Từ Xa. Nếu Không, UDP Sẽ Không Hoạt Động.</string>
+	<string name="title_resolver_udp">Cổng UDP (Từ xa)</string>
+	<string name="summary_resolver_udp">Mô Hình (7300)</string>
+	<string name="category_forward_dns">Chuyển Tiếp DNS</string>
+	<string name="title_forward_dns">Chuyển Tiếp DNS</string>
+	<string name="summary_forward_dns">Nếu Hoạt Động, Hãy Chuyển Hướng Yêu Cầu Đến Máy Chủ Từ Xa. Nếu không, DNS Sẽ Được Sử Dụng Bởi Hệ Thống Cục Bộ.</string>
+	<string name="title_dns_primary">DNS Chính</string>
+	<string name="summary_dns_primary">Mẫu (1.1.1.1)</string>
+	<string name="dialog_message_dns_primary">Nhập IP DNS</string>
+	<string name="category_advanced_settings">Cài Đặt Nâng Cao</string>
+	<string name="title_hide_log">Ẩn Nhật Ký Khi Bắt đầu</string>
+	<string name="summary_hide_log">Nếu Tôi Kích Hoạt Nhật Ký, Nó Sẽ Không Được Hiển Thị Tự Động.</string>
+	<string name="title_auto_clear_log">Tự Động Xóa Nhật Ký</string>
+	<string name="summary_auto_clear_log">Nếu Tôi Kích Hoạt Các Bản Ghi, Chúng Sẽ Tự Động Bị Xóa.</string>
+	<string name="category_forward_port">Cổng Chuyển Tiếp</string>
+	<string name="title_mode_debug">Chế Độ Kiểm Lổi</string>
+	<string name="summary_mode_debug">Cho phép bạn xem thêm thông tin nâng cao trong nhật ký.</string>
+	<string name="title_number_max_threads">Số lượng chủ đề tối đa</string>
+	<string name="summary_number_max_threads">Số lượng Threads càng nhiều thì điện năng tiêu thụ và tốc độ kết nối trên thiết bị của bạn càng cao.</string>
+	<string name="category_filter_apps">Bộ lọc ứng dụng</string>
+	<string name="title_filter_apps">Lọc ứng dụng</string>
+	<string name="title_bypass_mode">Chế độ bỏ qua</string>
+	<string name="summary_bypass_modo">Nếu hoạt động, hoặc lưu lượng truy cập từ các ứng dụng đã chọn sẽ được gửi trực tiếp.</string>
+	<string name="title_apps_list">Danh sách các ứng dụng</string>
+	<string name="summary_apps_list">Enter one package name per line. Look in Settings -> Apps for the app package name.</string>
+	<string name="category_settings_adicionais">Cài đặt thêm</string>
+	<string name="title_mode_night">Chế độ ban đêm (beta)</string>
+	<string name="title_ping_time">Ping (Giây)</string>
+	<string name="category_user_interface">Giao diện người dùng</string>
+	<string name="title_language">Ngôn ngữ</string>
+	<string name="category_tunnel">Đường hầm</string>
+	
+	<!-- novo -->
+	
+	<string name="ssh_server">Người phục vụ</string>
+	<string name="ssh_port">Cổng</string>
+	<string name="ssh_porta_local">Cổng địa phương (Socks5)</string>
+	<string name="payload">Payload</string>
+	<string name="sni">Máy chủ SNI</string>
+	<string name="proxy_remote">Proxy từ xa</string>
+	<string name="proxy_ip">Proxy IP / Máy chủ</string>
+	<string name="proxy_port">Cổng</string>
+	<string name="proxy_auth">Xác thực proxy</string>
+	<string name="proxy_user">Người sử dụng</string>
+	<string name="proxy_pass">Mật khẩu</string>
+	<string name="dir_name">Mỳ ống</string>
+	
+	<string name ="alert_exit">Bạn Có Chắc Chắn Muốn Thoát?</string>
+	<string name="alert_clear_settings">Bạn có chắc chắn muốn đặt lại?</string>
+	<string name="no_value">ㅤ</string>
+	<string name="blocked">Đã khóa</string>
+	<string name="expired">Hết hạn</string>
+	<string name="title_delete_file">Loại trừ Tệp</string>
+	<string name="alert_delete_file">Bạn có muốn bao gồm tệp này không?</string>
+	<string name="dir_home_name">Bộ nhớ trong</string>
+	<string name="select_file_setting">Chọn tập tin</string>
+	<string name="title_permission_request">Cấp quyền</string>
+	<string name="message_permission_request">Xin vui lòng, cần phải cấp các quyền cần thiết để ứng dụng hoạt động bình thường.</string>
+	<string name="show_license">Xem giấy phép</string>
+	
+	<!--- export settings -->
+	<string name="name_file">Tên tệp</string>
+	<string name="export_button">Xuất khẩu</string>
+	<string name="title_security">Khóa bảo mật</string>
+	<string name="check_protect">Khóa cấu hình và ngăn chỉnh sửa</string>
+	<string name="title_extra">Phụ</string>
+	<string name="check_block_root">Chặn gốc</string>
+	<string name="check_show_login_start">Hiển thị Đăng nhập để Bắt đầu</string>
+	<string name="check_date_valid">Đặt ngày hết hạn</string>
+	<string name="input_note_msg">Tin nhắn / Ghi chú cho người dùng (tùy chọn)</string>
+	<string name="alert_block_settings">Khóa cấu hình không đảm bảo 100% bảo mật</string>
+	<string name="error_empty_name_file">Tên tệp không được để trống</string>
+	
+	<!--- action messages -->
+	<string name="minimize">Chạy Ngầm</string>
+	<string name="exit">Thoát</string>
+	<string name="yes">Có</string>
+	<string name="no">Không</string>
+	<string name="save">Lưu</string>
+	<string name="open">Mở ra</string>
+	<string name="more">Hơn</string>
+	<string name="cancel">Hủy Bỏ</string>
+	<string name="wait">Đợi</string>
+	<string name="attention">Chú Ý</string>
+	<string name="ok">Ok</string>
+	<string name="close">Gần</string>
+	<string name="open_with">Mở với</string>
+	<string name="clear_settings">Khôi phục</string>
+	<string name="clear_logs">Xóa hồ sơ</string>
+	<string name="settings_ImportExport">Import/Export</string>
+	<string name="settings_import">Nhập cấu hình</string>
+	<string name="settings_export">Xuất cấu hình</string>
+	<string name="actived">Tối</string>
+	<string name="disabled">Sáng</string>
+	
+	<!--Welcome Wizard strings (DJH)-->
+    <string name="wizard_details">Một số thông tin chi tiết về Tunnel VPN</string>
+    <string name="wizard_details_msg">Tunnel VPN là một ứng dụng khách VPN hoạt động thông qua một máy chủ SSH. Bản thân ứng dụng này vô dụng nếu không có cấu hình, vì vậy nó chỉ dành cho người dùng cao cấp.</string>
+	<string name="payload_details">Từ khóa</string>
+	<string name="payload_details_msg">Các từ khóa sau hiện được hỗ trợ trong văn bản kết nối: [method] [host_port] [ssh] [host] [port] [protocol] [crlf] [cr] [lf] [lfcr] [ua] [random = *;] [xoay = *;] [tách] [delay_split]</string>
+	<string name="project_home">Trang chủ Nhà phát triển:</string>
+	<string name="project_urls">http://t.me/SlipkProjects</string>
+	<string name="third_party_software">Phần mềm của bên thứ ba</string>
+	<string name="jsocks_version">JSocks v1.0.1: https://jsocks.sourceforge.net</string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+	
+	<!--- error messages -->
+	<string name="error_tunnel_service_execution">Đang chạy dịch vụ, dừng nó lại trước</string>
+	<string name="error_no_supported">Chức năng không được thiết bị của bạn hỗ trợ</string>
+	<string name="error_invalid_settings">Cấu hình không hợp lệ</string>
+	<string name="error_settings_blocked">Cấu hình bị khóa</string>
+	<string name="error_delete_file">Không xóa được tệp</string>
+	<string name="error_file_config_incompatible">Tệp không được hỗ trợ</string>
+	<string name="error_file_not_found">Không tìm thấy tệp</string>
+	<string name="error_permission_writer_required">Quyền ghi là bắt buộc</string>
+	<string name="error_date_selected_invalid">Ngày đã chọn không được ít hơn hôm nay</string>
+	<string name="error_export_settings">Không thể xuất cấu hình</string>
+	<string name="success_clear_settings">Cài đặt đã được khôi phục</string>
+	<string name="success_import_settings">Tệp đã nhập</string>
+	<string name="success_export_settings">Cấu hình đã xuất</string>
+	
+	<!-- Ainda Falta Traduzir -->
+	<string name="title_agradecimento_especial">Trân trọng cảm ơn</string>
+	<string name="error_userpass_empty">Nhập tên người dùng / mật khẩu do người tạo cấu hình cung cấp</string>
+	<string name="title_disable_delay_ssh">Tắt TCP Delay</string>
+	<string name="summary_disable_delay_ssh">Nếu hoạt động sẽ không có độ trễ giữa các yêu cầu, điều này có thể cải thiện ping hoặc thậm chí là tốc độ của kết nối.</string>
+	<string name="title_tethering_subnet">Chia sẻ kết nối mạng con (beta)</string>
+	<string name="summary_tethering_subnet">Bật nó nếu bạn gặp sự cố khi chia sẻ internet thiết bị của mình.</string>
+	
+</resources>

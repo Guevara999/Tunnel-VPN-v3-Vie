@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.slipkprojects.compatstyle"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\style\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\style\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\style\src\main\AndroidManifest.xml:5:5-11:19
+12        <activity android:name="com.slipkprojects.compatstyle.NotImplemented" />
+12-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\style\src\main\AndroidManifest.xml:7:3-9:11
+12-->E:\AndroidStudioProjects\SocksHttp-master (ENGLISH)\style\src\main\AndroidManifest.xml:8:13-43
+13    </application>
+14
+15</manifest>
