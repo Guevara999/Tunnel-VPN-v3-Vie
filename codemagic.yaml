@@ -2,17 +2,14 @@ workflows:
   android-debug:
     name: Build Debug APK
     instance_type: mac_mini_m1
+    max_build_duration: 60
     environment:
       java: 17
       android: latest
     scripts:
       - name: Give gradlew permission
-        script: chmod +x gradlew
+        script: chmod +x ./gradlew
       - name: Build Debug APK
         script: ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/apk/debug/*.apk
-    cache:
-      cache_paths:
-        - ~/.gradle/caches
-        - ~/.gradle/wrapper
