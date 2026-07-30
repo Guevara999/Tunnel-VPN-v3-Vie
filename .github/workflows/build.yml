@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
 
       # Downgraded JDK to 11 to support older Gradle versions
       - name: Set up JDK 11
