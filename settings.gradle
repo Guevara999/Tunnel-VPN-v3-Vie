@@ -1,1 +1,2 @@
 include ':style', ':service', ':app'
+include ':app', ':tastytoast'
