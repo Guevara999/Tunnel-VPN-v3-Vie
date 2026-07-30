@@ -3,7 +3,7 @@ workflows:
     name: Build Debug APK
     instance_type: mac_mini_m1
     environment:
-      java: 17
+      java: 11
     scripts:
       - chmod +x ./gradlew
       - ./gradlew assembleDebug
